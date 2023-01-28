@@ -21,6 +21,7 @@ test_data = datasets.FashionMNIST(
     download=True,
     transform=ToTensor()
 )
+print(training_data)
 
 class CustomImageDataset(Dataset):
     def __init__(self, annotations_file, img_dir, transform=None, target_transform=None):
